@@ -1,5 +1,5 @@
 // import {v4 as uuid} from "uuid"
-import { IProduct } from "../interfaces"
+import { IformInput, IProduct } from "../interfaces"
 
 export const productList:IProduct[]=[
     {
@@ -27,5 +27,31 @@ export const productList:IProduct[]=[
             imageURL:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqrFjrAigg8zkdOMzfkuRWr_DbpiV4gs2n0w&s",
         }
         
+    }
+]
+export const formInputsList :IformInput[]=[
+    {
+        id:"title",
+        name:"title",
+        label:"Product Title",
+        type:"text",
+    },
+    {
+        id:"description",
+        name:"description",
+        label:"Product description",
+        type:"text",
+    },
+    {
+        id:"image",
+        name:"imageURL",
+        label:"Product Image URL",
+        type:"text",
+    },
+    {
+        id:"price",
+        name:"price",
+        label:"Product Price",
+        type:"number",
     }
 ]
